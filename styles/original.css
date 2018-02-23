@@ -26,6 +26,10 @@ img {
   max-width: 100%;
 }
 
+img.print-only {
+  display: none;
+}
+
 .container {
   width: 90%;
   margin: auto;
@@ -102,4 +106,40 @@ footer {
 footer form {
   margin-left: 2rem;
   display: inline;
+}
+
+
+@media (max-width: 600px) {
+  .container {
+/*    clear: both;*/
+    width: 95%;
+   margin: 0  1rem;
+/*   padding: auto 1rem;*/
+ }
+
+  body {
+    clear: both;
+    width: 100%;
+   margin: auto 1rem;
+   padding: auto 1rem;
+ }
+
+  header {
+/*    clear: both;*/
+    width: 100%;
+   margin: auto 1rem;
+   padding: auto 1rem;
+ }
+  
+  article {
+    margin: 1rem 1rem;
+    width: 100%;
+    padding: 1rem;
+  }
+
+    article figure {
+    width: 100%;
+    margin: auto;
+  }
+
 }

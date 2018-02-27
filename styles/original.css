@@ -109,37 +109,66 @@ footer form {
 }
 
 
-@media (max-width: 600px) {
-  .container {
-/*    clear: both;*/
-    width: 95%;
-   margin: 0  1rem;
-/*   padding: auto 1rem;*/
- }
-
+@media (max-width: 450px) {
   body {
+/*
     clear: both;
     width: 100%;
-   margin: auto 1rem;
-   padding: auto 1rem;
- }
-
-  header {
-/*    clear: both;*/
-    width: 100%;
-   margin: auto 1rem;
-   padding: auto 1rem;
- }
-  
-  article {
-    margin: 1rem 1rem;
-    width: 100%;
-    padding: 1rem;
+    margin: auto 1rem;
+    padding: auto 1rem;
+*/
+    padding: 0; 
   }
 
-    article figure {
+  .container {
+    width: 95%;
+/*    margin: 0  1rem;*/
+  }
+
+/*
+  header {
+    width: 100%;
+    margin: auto 1rem;
+    padding: auto 1rem;
+  }
+*/
+
+  article {
+/*
+    margin: 1rem 1rem;
+    width: 100%;
+*/
+    width: 95%;
+/*    padding: 1rem;*/
+  }
+  
+  article figure {
     width: 100%;
     margin: auto;
   }
 
+}
+
+
+/*
+@media (max-width: 450px) {
+  article { 
+    width: 95%;
+  }
+  .container { 
+    width: 95%; 
+  }
+  body { 
+    padding: 0; 
+  }  
+}
+*/
+
+
+/* does this work? */
+@media screen and (max-width: 400px) 
+              and (orientation: portrait) {
+  p {
+    font-size: 1.5rem;
+  }
 }
